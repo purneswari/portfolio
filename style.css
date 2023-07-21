@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-link{
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+.nav-link:hover{
+    background-color: white;
+    color: black;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-card-top{
+    height: 250px;
+    object-fit: cover;
+}
+
+.card{
+ border:none;
+outline:none;
+-webkit-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+-moz-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+}
+
+.card p{
+color:gray;
+}
+ 
+.circle{
+height:70px;
+width:70px;
+background-color:lightgrey;
+color:black;
+padding:12px;
+font-size:30px;
+border-radius:50%;
+display:inline-block;
+margin-bottom:20px;
+}
+
+.card:hover .circle{
+background-color: black;
+color:white;
+transition:0.5s;
+}
+
+
+
+
+@media (max-width:990px) {
+    section{
+        height: fit-content;
+        padding: 30px 0px;
+    }   
+    .col-lg-4,.col-lg-6{
+        margin: 20px 0px;
+    }
+}
